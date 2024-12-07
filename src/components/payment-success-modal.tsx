@@ -8,6 +8,7 @@ import { Modal } from "./ui/modal"
 import { LoadingSpinner } from "./loading-spinner"
 import { Button } from "./ui/button"
 import { CheckIcon } from "lucide-react"
+import Image from "next/image"
 
 export const PaymentSuccessModal = () => {
   const router = useRouter()
@@ -53,10 +54,12 @@ export const PaymentSuccessModal = () => {
         ) : (
           <>
             <div className="relative aspect-video border border-gray-200 w-full overflow-hidden rounded-lg bg-gray-50">
-              <img
-                src="/brand-asset-heart.png"
-                className="h-full w-full object-cover"
+            <Image
+                src="/brand-asset-heart.png" // Path to your image
                 alt="Payment success"
+                className="h-full w-full object-cover"
+                width={500} 
+                height={300} 
               />
             </div>
 

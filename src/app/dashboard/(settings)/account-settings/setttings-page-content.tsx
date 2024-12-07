@@ -36,12 +36,13 @@ export const AccountSettings = ({
       </div>
 
       <p className="mt-2 text-sm/6 text-gray-600">
-        Don't know how to find your Discord ID?{" "}
-        <Link href="#" className="text-brand-600 hover:text-brand-500">
-          Learn how to obtain it here
-        </Link>
-        .
-      </p>
+  Don&apos;t know how to find your Discord ID?{" "}
+  <Link href="#" className="text-brand-600 hover:text-brand-500">
+    Learn how to obtain it here
+  </Link>
+  .
+</p>
+
 
       <div className="pt-4">
         <Button onClick={() => mutate(discordId)} disabled={isPending}>
